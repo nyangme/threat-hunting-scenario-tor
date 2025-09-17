@@ -78,7 +78,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR initiating process file names. At `2025-09-16T22:27:07.7385204Z`, an employee on the "mythreathunt804" device successfully established a connection to the remote IP address `127.0.0.1` on port `9150`. The connection was initiated by the process `firefox.exe`, located in the folder `c:\users\employee\desktop\tor browser\browser\firefox.exe`. There were a couple of other connections to sites over port `443`.
+Searched for any indication the TOR browser was used to establish a connection using any of the known TOR initiating process file names. At `2025-09-16T22:27:07.7385204Z`, an employee on the "mythreathunt804" device successfully established a connection to the localhost IP address `127.0.0.1` on port `9150`. The connection was initiated by the process `firefox.exe`, located in the folder `c:\users\employee\desktop\tor browser\browser\firefox.exe`. There were a couple of other connections to sites over port `443`.
 
 **Query used to locate events:**
 
@@ -113,7 +113,7 @@ DeviceNetworkEvents
 ### 3. Network Connection - TOR Network
 
 - **Timestamp:** `2025-09-16T22:27:07.7385204Z`
-- **Event:** A network connection to IP `127.0.0.1` on port `9150` by user "employee" was established using `firefox.exe`, confirming TOR browser network activity.
+- **Event:** A network connection to localhost `127.0.0.1` on port `9150` by user "employee" was established using `firefox.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `firefox.exe`
 - **File Path:** `c:\users\employee\desktop\tor browser\browser\firefox.exe`
@@ -121,7 +121,7 @@ DeviceNetworkEvents
 ### 4. Additional Network Connections - TOR Browser Activity
 
 - **Timestamps:**
-  - `2025-09-16T22:32:13.6459504Z` - Connected to `127.0.0.1` on port `50784`.
+  - `2025-09-16T22:32:13.6459504Z` - Connected to localhost `127.0.0.1` on port `50784`.
   - `2025-09-16T22:32:30.4079278Z` - Connected to `5.132.159.238` on port `443`.
 - **Event:** Additional TOR network connections were established, indicating ongoing activity by user "employee" through the TOR browser.
 - **Action:** Multiple successful connections detected.
